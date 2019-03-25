@@ -74,7 +74,7 @@ h2 {
 }
 
 h3 {
-	font-size:20px;
+	font-size:18px;
 }
 
 p {
@@ -82,12 +82,12 @@ p {
 }
 
 .container {
-	width:876px;
+	max-width:876px;
 	margin:0 auto;
 	
 }
 header {
-	margin-top: 20px;
+	margin-top: 28px;
 
 	display: inline-flex;
 
@@ -229,4 +229,86 @@ button {
 	background-color:white;
 	
 	margin-top: 15px;
+}
+
+@media (max-width:800px) {
+    .container {
+        width:100%;
+    }
+    header {
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    header a {
+        display: flex;
+        justify-content: center;
+    }
+    header nav {
+        padding-right: 0;
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 44px;
+    }
+
+    .page-title {
+        padding:74px 0;
+    }
+
+    .page-title-left {
+        width:100%;
+    }
+    .page-title-left button {
+        font-size:16px;
+    }
+    .header-img {
+        display:none;
+    }
+
+    .contents section, .contact {
+        padding:25px;
+    }
+
+
+}
+
+@media (max-width:500px) {
+    
+    header {
+        margin-top:20px;
+    }
+    header nav {
+        display:flex;
+        flex-direction: column;
+        margin-top:20px;
+        border-bottom:1px solid #666;
+    }
+    header nav a {
+        font-size:18px; 
+        padding:21px;
+        border-top:1px solid #666;
+        width:100%;
+    }
+    .page-title {
+        padding: 50px 0;
+    }
+    .contents {
+        display:flex;
+        align-content:center;
+        flex-direction: column;
+
+    }
+    .contents-top, .contents-bottom {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .middle-img {
+        max-width: 460px;
+        margin: 20px;
+    }
+
+    .contents section, .conteact {
+        
+        padding:20px;
+    }
 }
